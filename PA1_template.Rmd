@@ -70,7 +70,10 @@ averages[which.max(averages$steps),]
 missing <- sum(is.na(activityData$steps))
 ```
 
-##### 2. Fill Missing Values (with mean per day)
+##### 2. Fill Missing Values 
+
+The missing values would be filled with the mean steps per day
+
 ##### 3. A New dataset that is equal to the original dataset but with the missing data filled in.
 
 

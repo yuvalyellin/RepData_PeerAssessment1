@@ -278,7 +278,9 @@ ggplot(data=averages, aes(x=interval, y=steps)) +
 <pre><code class="r">missing &lt;- sum(is.na(activityData$steps))
 </code></pre>
 
-<h5>2. Fill Missing Values (with mean per day)</h5>
+<h5>2. Fill Missing Values</h5>
+
+<p>The missing values would be filled with the mean steps per day</p>
 
 <h5>3. A New dataset that is equal to the original dataset but with the missing data filled in.</h5>
 
