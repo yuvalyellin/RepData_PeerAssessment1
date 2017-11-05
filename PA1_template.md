@@ -33,7 +33,7 @@ totalStepsByDay <- tapply(activityData$steps, activityData$date, sum, na.rm=TRUE
 
 ```r
 library(ggplot2)
-qplot(totalStepsByDay, xlab='Steps per day', binwidth=1000)
+hist(totalStepsByDay, main = "Total Steps/Day", xlab="Number of Steps")
 ```
 
 ![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3-1.png)
@@ -113,7 +113,7 @@ activityDataImputed$steps <- impute(activityData$steps, fun=mean)
 
 ```r
 totalStepsByDay <- tapply(activityDataImputed$steps, activityDataImputed$date, FUN=sum)
-qplot(totalStepsByDay, binwidth=1000, xlab="total number of steps taken each day")
+hist(totalStepsByDay, main = "Total Steps/Day", xlab="Number of Steps")
 ```
 
 ![plot of chunk unnamed-chunk-9](figure/unnamed-chunk-9-1.png)
